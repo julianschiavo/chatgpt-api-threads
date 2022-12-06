@@ -135,6 +135,7 @@ export class ChatGPTAPI {
           try {
             const parsedData: types.ConversationResponseEvent = JSON.parse(data)
             const message = parsedData.message
+            console.log(Object.keys(parsedData))
             // console.log('event', JSON.stringify(parsedData, null, 2))
 
             if (message) {
